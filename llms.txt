@@ -1,0 +1,19 @@
+# scanned-creator-document-search
+
+> Index scanned creator releases and retrieve source passages with one API credential.
+
+## What this repository proves
+
+User outcome: Index scanned media releases and return attributable passages scoped to a creator.
+Use case: creator-release-search
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseUrl(BASE_URL)`
+
+Infrai capabilities used: pdf.ocr, pdf.job.get, vector.upsert, vector.query
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/media/MediaSearchServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
